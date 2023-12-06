@@ -58,11 +58,13 @@ Exemplo:
 ```
 #### Respostas
 ##### OK! 200
-Caso essa resposta aconteça você vai receber a listagem de todos os games.
+Caso essa resposta aconteça você vai receber o token JWT para conseguir acessar endpoints protegidos na API.
 
 Exemplo de resposta:
 ```
-***************
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ2aWN0b3JkZXZ0YkBndWlhZG9wcm9ncmFtYWRvci5jb20iLCJpYXQiOjE3MDE4MjM0ODksImV4cCI6MTcwMTk5NjI4OX0.5Z3pYs3DWX_fRWPvNURwd72BqWuVC4u73thC3rE_U_k"
+}
 ```
 ##### Falha na autenticação! 401
 Caso essa resposta aconteça significa que aconteceu alguma falha durante o processo de autenticação da requisição. Motivos: senha ou e-mail incorretos.
